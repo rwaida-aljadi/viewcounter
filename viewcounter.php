@@ -7,6 +7,7 @@ class viewcounter extends GenericPlugin {
         $success = parent::register($category, $path);
             if ($success && $this->getEnabled()) {
                HookRegistry::register('TemplateResource::getFilename', array($this, '_overridePluginTemplates'));
+			   HookRegistry::register('TemplateResource::getFilename', array($this, '_overridearticle_summary'));
     
             }
         return $success;
@@ -24,7 +25,7 @@ class viewcounter extends GenericPlugin {
 
 	/**
    * Provide a description for this plugin
-   *
+   *PluginTemplates
    * The description will appear in the plugins list where editors can
    * enable and disable plugins.
    */
@@ -49,7 +50,13 @@ class viewcounter extends GenericPlugin {
 		return false;
 	}
 
-
+	public function _overridearticle_summary($hookName, $args) {
+		$templatePath = $args[0];
+		if ($templatePath === 'templates/frontend/objects/article_summary.tpl') {
+			$args[0] = 'plugins/generic/viewcounter/templates/frontend/objects/article_summary.tpl';
+		}
+		return false;
+	}
 
 
 

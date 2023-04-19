@@ -83,19 +83,6 @@
 
 
 
-	
-	{assign var=galleys value=$article->getGalleys()}
-	Visualizações: {$article->getViews()}
-<br>
-
-	{if $galleys}
-		{foreach from=$galleys item=galley name=galleyList}
-		   / Downloads: {$galley->getViews()}
-		{/foreach}
-	{/if}
-
-
-
 
 
 	{if $publication->getLocalizedData('subtitle')}
@@ -103,6 +90,18 @@
 			{$publication->getLocalizedData('subtitle')|escape}
 		</h2>
 	{/if}
+
+
+	
+	
+	{assign var=galleys value=$article->getGalleys()}
+	<i class='fa fa-bar-chart' style='color: red'></i> </span> <b>Visualizações: {$article->getViews()}</b>
+<br>
+
+
+
+
+
 
 	<div class="row">
 		<div class="main_entry">
@@ -284,7 +283,7 @@
 						{foreach from=$supplementaryGalleys item=galley}
 							<li>
 								{include file="frontend/objects/galley_link.tpl" parent=$article publication=$publication galley=$galley isSupplementary="1"}
-							</li>
+							</li><i class='fa fa-download' style='color: red'></i> {$galley->getViews()}
 						{/foreach}
 					</ul>
 				</div>
