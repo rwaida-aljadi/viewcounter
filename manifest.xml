@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <primary_locale>pt_BR</primary_locale>
+  <plugin
+    id="viewcounter"
+    system="3.2.1-1"
+    package="viewcounter"
+    directory="viewcounter"
+    name="viewcounter"
+    description="viewcounter"
+    version="1.0.0"
+    date="2023-04-19"
+    author="STI FFLCH and ABCD USP"
+    email="sti.fflch@usp.br"
+    url="https://github.com/danielsf93/viewcounter"
+  >
+  </plugin>
+</manifest>
