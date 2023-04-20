@@ -77,7 +77,7 @@
 	{if !$hideGalleys}
 		<ul class="galleys_links">
 			{foreach from=$article->getGalleys() item=galley}
-				</li><i class='fa fa-download' style='color: red'></i> {$galley->getViews()}				{if $primaryGenreIds}
+				</li><i class='fa fa-download' style='color: red'></i> {$galley->getViews()}{if $primaryGenreIds}
 					{assign var="file" value=$galley->getFile()}
 					{if !$galley->getRemoteUrl() && !($file && in_array($file->getGenreId(), $primaryGenreIds))}
 						{continue}

@@ -269,7 +269,7 @@
 						{foreach from=$primaryGalleys item=galley}
 							<li>
 								{include file="frontend/objects/galley_link.tpl" parent=$article publication=$publication galley=$galley purchaseFee=$currentJournal->getData('purchaseArticleFee') purchaseCurrency=$currentJournal->getData('currency')}
-							</li>
+							</li></li><i class='fa fa-download' style='color: red'></i> {$galley->getViews()}<br>
 						{/foreach}
 					</ul>
 				</div>
