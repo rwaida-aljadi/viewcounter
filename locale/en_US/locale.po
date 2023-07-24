@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "plugins.generic.viewcounter.displayName"
-msgstr "View Counter mt"
+msgstr "View Counter"
 
 msgid "plugins.generic.viewcounter.description"
 msgstr "This plugin shows the number of accesses and downloads of articles."

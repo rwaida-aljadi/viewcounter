@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 msgid "plugins.generic.viewcounter.displayName"
-msgstr "View Counter mt"
+msgstr "View Counter"
 
 msgstr "plugins.generic.viewcounter.description"
 msgstr "Este plugin muestra el número de accesos y descargas de artículos."
