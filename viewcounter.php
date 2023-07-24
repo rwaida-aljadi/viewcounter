@@ -20,7 +20,7 @@ class viewcounter extends GenericPlugin {
    * enable and disable plugins.
    */
 	public function getDisplayName() {
-		return __('View counter');
+		return __('plugins.generic.viewcounter.displayName');
 	}
 
 	/**
@@ -30,7 +30,7 @@ class viewcounter extends GenericPlugin {
    * enable and disable plugins.
    */
 	public function getDescription() {
-		return __('Plugin que demonstra a quantidade de acessos e downloads de artigos');
+		return __('plugins.generic.viewcounter.description');
 	}
 	
 	/**
